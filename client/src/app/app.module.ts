@@ -1,7 +1,8 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { MDBBootstrapModule } from "angular-bootstrap-md";
-
+import { FormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
 import { RouterModule, Routes } from "@angular/router";
 import { appRoutes } from "./app.routing";
 import { AppComponent } from "./app.component";
@@ -13,6 +14,8 @@ import { PrivateareaComponent } from "./privatearea/privatearea.component";
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
+    FormsModule,
+    HttpClientModule,
     MDBBootstrapModule.forRoot()
   ],
   providers: [],
